@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 1 y 2 tema 4</title>
+	<style>
+	#par1 {
+		text-align: right;
+		font-style: italic;
+	}
+	#segunda_linea {
+		text-transform: uppercase;
+		text-decoration: line-through;
+	}
+	#tecera_linea {
+		font-size: 120%;
+		font-family: Helvetica, Verdana, "Times New Roman";
+	}
+	#texto_sombreado{
+		font-weight: bold;
+		text-shadow: -4px 2px 2px green;
+	}
+	.bloques {
+		width: 400px;
+		height: 200px;
+		border-radius: 15px;
+		color: white;
+		margin: 2px;
+	}
+	.prim_enlaces {
+		width: 100px;
+		height: 50px;
+		color: white;
+		display: inline-block;
+	}
+	.bloques_contenedor {
+		display:flex;
+	}
+	.seg_enlaces {
+		width: 100px;
+		height: 50px;
+		color: white;
+		display: block; 		
+	}
+</style>
+</head>
+<h1>CSS: Ejercicio 1</h1>
+<p id="par1">Este es el párrafo 1 en cursiva y alineado a la derecha.</p>
+<p id="segunda_linea">Este también es un párrafo en minúsculas pero convertido en mayúsculas y tachado.</p>
+<p id="tercera_linea">Como no hay dos sin tres, este será el tercero con un tipo de letra diferente y un 20% más grande<p>
+<p id="texto_sombreado">Y por último, un texto en negrita y con sombrita en verde</p> 
+<hr>
+<div class="bloques_contenedor">
+<div class="bloques" style="background-color: lightgreen;">
+	<p>Buscadores:</p>
+	<div class="prim_enlaces" style="background-color:red;"><a href = "https://duckduckgo.com/">DuckDuckGo</a></div>
+	<div class="prim_enlaces" style="background-color:green;"><a href = "https://www.ecosia.org/?c=es">Ecosia</a></div>
+	<div class="prim_enlaces" style="background-color:blue;"><a href = "https://www.google.com/">Google</a></div>	
+</div>
+<div class="bloques" style="background-color: lightblue;">
+	<p>Redes sociales:</p>
+	<div class="seg_enlaces" style="background-color:red;"><a href = "https://www.facebook.com/?locale=es_ES">Facebook</a></div>
+	<div class="seg_enlaces" style="background-color:green;"><a href = "https://x.com/?lang=es">Twitter</a></div>
+	<div class="seg_enlaces" style="background-color:blue;"><a href = "https://es.pinterest.com/">Pinterest</a></div>	
+</div>
+<div class="bloques" style="background-color: mediumpurple;">
+	<p>Noticias:</p>
+	<a href="https://elpais.com/">El Pais</a>
+	<a href="https://www.eldiario.es/">El Diario</a>
+	<a href="https://www.elmundo.es/">El Mundo</a>
+</div>
+</div>
+</body>
+</html>
