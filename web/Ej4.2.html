@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Imágenes de fondo</title>
+	<style>
+		.bloque {
+			height: 200px;
+			width: 200px;
+			border-width: 3px;
+			background-image: url('../img/gato.jpg');
+			border-style: solid;
+		}
+		#primer_bloque {
+			border-color: red;
+			background-repeat: no-repeat;
+			background-position: center;
+			
+		}
+		#segundo_bloque {
+			border-color: blue;
+			background-repeat: repeat-x;
+			background-position: bottom left;
+		}
+		#tercer_bloque {
+			border-color: green;
+			background-repeat: repeat-y;
+			background-position: top right;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS: Ejercicio 2</h1>
+	<div class= "bloque" id="primer_bloque"></div>
+	<div class="bloque" id="segundo_bloque"></div>
+	<div class="bloque" id="tercer_bloque"></div>
+</body>
+</html>
