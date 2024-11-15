@@ -47,3 +47,12 @@ footer {
 	text-align: center;
 	padding: 5px;
 }
+#contenedorImagenes {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+.imagenNormalizada {
+	object-fit: scale-down;
+	height: auto;
+}
