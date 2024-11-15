@@ -5,3 +5,11 @@ body {
 #cabecera {
 	background-color: #007bff;
 }
+.enlaces {
+	color: white;
+	text-decoration: none;
+
+}
+a:hover {
+	color: blue;
+}
