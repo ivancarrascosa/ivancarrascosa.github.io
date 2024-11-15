@@ -4,6 +4,13 @@ body {
 }
 #cabecera {
 	background-color: #007bff;
+	border: solid 2px #515858;
+	padding: 5px;
+	border-radius: 10px;
+}
+nav {
+	display: flex;
+	justify-content: space-evenly;
 }
 .enlaces {
 	color: white;
@@ -15,10 +22,15 @@ a:hover {
 }
 #contenido {
 	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 #sobre_mi {
 	font-size: large;
 	color: #5a5e5e;
+	margin: 20px;
 }
 h2 {
 	font-size: 30px;
@@ -26,6 +38,8 @@ h2 {
 #imagen_gato {
 	height: auto;
 	width: 50%;
+	box-shadow:-3px 2px 2px black;
+
 }
 footer {
 	background-color: #333;
