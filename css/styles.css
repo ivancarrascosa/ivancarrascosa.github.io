@@ -13,3 +13,23 @@ body {
 a:hover {
 	color: blue;
 }
+#contenido {
+	padding: 20px;
+}
+#sobre_mi {
+	font-size: large;
+	color: #5a5e5e;
+}
+h2 {
+	font-size: 30px;
+}
+#imagen_gato {
+	height: auto;
+	width: 50%;
+}
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
