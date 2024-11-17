@@ -7,13 +7,30 @@
 	<link rel="stylesheet" href="..\css\styles.css">
 </head>
 <body>
+	<div class="Contenedor_todo">
 	<header id="cabecera">
 		<nav>
 			<a class="enlaces" href="https://ivancarrascosa.github.io/web/Ej4.3_inicio.html">Inicio</a>
 			<a class="enlaces" href="https://ivancarrascosa.github.io/web/Ej4.3_sobremi.html">Sobre mí</a>
 			<a class="enlaces" href="https://ivancarrascosa.github.io/web/contacto4.3.html">Contacto</a>
 		</nav>
-	</header>
+		</header>
+		<form method="post">
+	<main><fieldset>
+		<legend>Contacto</legend>
+		<label for="Nombre">Nombre:</label>
+		<input type="text" name="Nombre"><br>
+		<label for="Correo electrónico">Correo electrónico:</label>
+		<input type="email" name="Correo electrónico" placeholder="ejemplo@gmail.com"><br>
+		<textarea placeholder="Introduzca aquí su mensaje"></textarea>
+		<br>
+		<button>Enviar</button>
+	</fieldset>
+	</form>
+</main>	
+	<br>
+	
 	<footer>© 2024 Mi Página Web. Todos los derechos reservados.</footer>
+	</div>
 </body>
 </html>

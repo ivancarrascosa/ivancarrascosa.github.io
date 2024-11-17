@@ -15,10 +15,17 @@ nav {
 .enlaces {
 	color: white;
 	text-decoration: none;
+	font-weight: bold;
 
 }
-a:hover {
+
+.enlaces:hover {
 	color: blue;
+	transition: 
+	0.5s,
+	background 1s;
+	background: #0467d1;
+	border-radius: 5px;
 }
 #contenido {
 	padding: 20px;
@@ -46,6 +53,7 @@ footer {
 	color: white;
 	text-align: center;
 	padding: 5px;
+	margin-top: auto;
 }
 #contenedorImagenes {
 	margin-top: 30px;
@@ -55,4 +63,32 @@ footer {
 .imagenNormalizada {
 	object-fit: scale-down;
 	height: auto;
+}
+fieldset {
+	border: solid 2px #515858;
+	border-radius: 10px;
+	margin: 5px;
+}
+input {
+	border: solid 1px #515858;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+textarea {
+	border: solid 1px #515858;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+main {
+	flex: 1;
+}
+.Contenedor_todo{
+	display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+html, body {
+    height: 100%;    /* Hace que body ocupe toda la altura de la ventana */
+    margin: 0; 
+    margin-top: 5px;      /* Elimina márgenes predeterminados */
 }
