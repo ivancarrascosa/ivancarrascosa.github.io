@@ -88,7 +88,7 @@ main {
     min-height: 100%;
 }
 html, body {
-    height: 100%;    /* Hace que body ocupe toda la altura de la ventana */
+    height: 100%;
     margin: 0; 
-    margin-top: 5px;      /* Elimina márgenes predeterminados */
+    margin-top: 5px;
 }
