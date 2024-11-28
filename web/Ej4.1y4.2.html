@@ -11,27 +11,59 @@
 <p id="par1" class="fst-italic text-end">Este es el párrafo 1 en cursiva y alineado a la derecha.</p>
 <p id="segunda_linea" class="text-uppercase text-decoration-underline">Este también es un párrafo en minúsculas pero convertido en mayúsculas y tachado.</p>
 <p id="tercera_linea">Como no hay dos sin tres, este será el tercero con un tipo de letra diferente y un 20% más grande<p>
-<p id="texto_sombreado " class="shadow p-3 mb-5 success rounded">Y por último, un texto en negrita y con sombrita en verde</p> 
+<p id="texto_sombreado " class="shadow p-3 mb-5 success rounded">Y por último, un texto en negrita y con sombrita en verde (no se puede poner sombra verde en letras)</p> 
 <hr>
-<div class="row-12">
-<div class="col-4" style="background-color: lightgreen;">
-	<p>Buscadores:</p>
-	<div class="col-4 p-3 m-1 bg-danger" style="background-color:red;"><a href = "https://duckduckgo.com/">DuckDuckGo</a></div>
-	<div class="col-4 bg-success p-3 m-1" style="background-color:green;"><a href = "https://www.ecosia.org/?c=es">Ecosia</a></div>
-	<div class="col-4 bg-primary p-3 m-1" style="background-color:blue;"><a href = "https://www.google.com/">Google</a></div>	
-</div>
-<div class="bloques" style="background-color: lightblue;">
-	<p>Redes sociales:</p>
-	<div class="seg_enlaces" style="background-color:red;"><a href = "https://www.facebook.com/?locale=es_ES">Facebook</a></div>
-	<div class="seg_enlaces" style="background-color:green;"><a href = "https://x.com/?lang=es">Twitter</a></div>
-	<div class="seg_enlaces" style="background-color:blue;"><a href = "https://es.pinterest.com/">Pinterest</a></div>	
-</div>
-<div class="bloques" style="background-color: mediumpurple;">
-	<p>Noticias:</p>
-	<a href="https://elpais.com/">El Pais</a>
-	<a href="https://www.eldiario.es/">El Diario</a>
-	<a href="https://www.elmundo.es/">El Mundo</a>
-</div>
-</div>
+  <div class="container mt-4 bg-light">
+    <div class="row">
+      <div class="col-md-4 p-0">
+        <div class="bg-primary p-3 text-center rounded">
+          <h5>Buscadores:</h5>
+          <div class="row">
+            <div class="col-4 p-0">
+              <div class="bg-danger p-2">
+                <a href="https://www.ecosia.org/?c=es" class="text-white">Ecosia</a>
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="bg-success p-2">
+                <a href="https://www.google.com/" class="text-white">Google</a>
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="bg-primary p-2">
+                <a href="https://duckduckgo.com/" class="text-white">Duck Duck Go</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 p-0">
+        <div class="bg-warning p-3 text-center rounded">
+          <h5>Redes sociales:</h5>
+          <div class="d-flex flex-column p-0">
+            <div class="bg-success p-2">
+              <a href="facebook.com" class="text-white">Facebook</a>
+            </div>
+            <div class="bg-success p-2">
+              <a href="x.com" class="text-white">Twitter</a>
+            </div>
+            <div class="bg-success p-2">
+              <a href="pinterest.com" class="text-white">Pinterest</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 p-0">
+        <div class="bg-info p-3 text-center rounded">
+          <h5>Noticias:</h5>
+          <a href="https://elpais.com/" class="btn btn-primary mb-2">El pais</a><br>
+          <a href="https://www.eldiario.es/" class="btn btn-primary mb-2">El Diario</a><br>
+          <a href="https://www.elmundo.es/" class="btn btn-primary">EL mundo</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
