@@ -27,7 +27,7 @@
                 success: function (data) { //200 o 201
                     console.log(data);
                     let latitud = data.latitude;
-                    let longitud = data.Objeto.longitude;
+                    let longitud = data.longitude;
                     cambiarDireccion(latitud,longitud);
                 },
                 error: function (xhr, status, error) {
