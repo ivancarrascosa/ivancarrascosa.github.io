@@ -26,10 +26,14 @@
                 dataType: "json", // Convierte la respuesta a objeto JSON 
                 success: function (data) { //200 o 201
                     console.log(data);
+                    let latitud = data.latitude;
+                    let longitud = data.Objeto.longitude;
+                    cambiarDireccion(latitud,longitud);
                 },
                 error: function (xhr, status, error) {
                     console.log(`Error: ${xhr.status} - ${error}`);
                 }
+                
             });
 
         });
