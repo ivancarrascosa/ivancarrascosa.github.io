@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="seleccionador_equipos">
+        <option value="" disabled selected>Selecciona un equipo</option>
+    </select>
+    <button id="mostrarInfo">Mostrar descripción del equipo</button>
+    <div id ="info"></div>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+            $.ajax({
+                url: "https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English Premier League",
+                method: "GET",
+                dataType: "json", // Convierte la respuesta a objeto JSON 
+                success: function (data) { //200 o 201
+                    console.log(data);
+                    arrayEquipos = data.teams;
+                    for (i = 0 ; i < arrayEquipos.length ; i++) {
+                        $("#seleccionador_equipos").append('<option value="'+ arrayEquipos[i].strTeam + '">' + arrayEquipos[i].strTeam + '</option>')
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.log(`Error: ${xhr.status} - ${error}`);
+                }
+                
+            });
+
+        });
+    $("#mostrarInfo").click(function() {
+        let equipo = $("#seleccionador_equipos").val();
+        $.ajax({
+                url: "https://thesportsdb.com/api/v1/json/3/searchteams.php?t=" + equipo,
+                method: "GET",
+                dataType: "json", // Convierte la respuesta a objeto JSON 
+                success: function (data) { //200 o 201
+                    console.log(data);
+                    $("#info").append("<p>" + data.strDescriptionEN	+ "</p>")
+                    $("#info").append('<img source= "' + data.strbadge + '">')
+                
+    }});
+    });
+</script>
