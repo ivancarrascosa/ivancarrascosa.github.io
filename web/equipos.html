@@ -25,7 +25,7 @@
                     console.log(data);
                     arrayEquipos = data.teams;
                     for (i = 0 ; i < arrayEquipos.length ; i++) {
-                        $("#seleccionador_equipos").append('<option value="'+ arrayEquipos[i].strTeam + '">' + arrayEquipos[i].strTeam + '</option>')
+                        $("#seleccionador_equipos").append('<option value="'+ i + '">' + arrayEquipos[i].strTeam + '</option>')
                     }
                 },
                 error: function (xhr, status, error) {
@@ -36,16 +36,18 @@
 
         });
     $("#mostrarInfo").click(function() {
+        $("#informacionEquipo").remove();
         let equipo = $("#seleccionador_equipos").val();
         $.ajax({
-                url: "https://thesportsdb.com/api/v1/json/3/searchteams.php?t=" + equipo,
+                url: "https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English Premier League",
                 method: "GET",
                 dataType: "json", // Convierte la respuesta a objeto JSON 
                 success: function (data) { //200 o 201
                     console.log(data);
-                    $("#info").append("<p>" + data.strDescriptionEN	+ "</p>")
-                    $("#info").append('<img source= "' + data.strbadge + '">')
-                
+                    $("#info").append('<div id= "informacionEquipo">')
+                    $("#informacionEquipo").append("<p>" + data.teams[equipo].strDescriptionEN+ "</p>")
+                    $("#informacionEquipo").append('<img src= "' + data.teams[equipo].strBadge + '">')
+                    $("#info").append('</div>')
     }});
     });
 </script>
